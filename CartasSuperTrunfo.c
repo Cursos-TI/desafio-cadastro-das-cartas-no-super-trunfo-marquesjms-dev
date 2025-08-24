@@ -87,6 +87,5 @@ int pontotur1, pontotur2;
     printf("\n Carta 1\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado1,codigo1,cidade1,populacao1,area1,pib1,pontotur1);
     printf("\n Carta 2\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado2,codigo2,cidade2,populacao2,area2,pib2,pontotur2);
 
-
     return 0;
 }
