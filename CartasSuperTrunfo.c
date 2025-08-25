@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//Teste Juliano
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -84,8 +84,8 @@ int pontotur1, pontotur2;
 //apresentação dos dados inseridos dos Estados 1 e 2
 
     printf("\n Informações Cadastradas com Sucesso! Os dados serão exibidos abaixo!\n");
-    printf("\n Carta 1\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado1,codigo1,cidade1,populacao1,area1,pib1,pontotur1);
-    printf("\n Carta 2\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado2,codigo2,cidade2,populacao2,area2,pib2,pontotur2);
+    printf("\n Carta 1\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %.2f Km²\n PIB: %.2f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado1,codigo1,cidade1,populacao1,area1,pib1,pontotur1);
+    printf("\n Carta 2\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %.2f Km²\n PIB: %.2f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado2,codigo2,cidade2,populacao2,area2,pib2,pontotur2);
 
     return 0;
 }
