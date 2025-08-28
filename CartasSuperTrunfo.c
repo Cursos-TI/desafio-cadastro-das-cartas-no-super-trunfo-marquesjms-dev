@@ -28,7 +28,9 @@ char cidade1 [50];
 char cidade2 [50];
 int populacao1, populacao2;
 float area1, area2;
+float denspop1, denspop2;
 float pib1, pib2;
+float percapita1, percapita2;
 int pontotur1, pontotur2;
 
 //Identificação dos Estados
@@ -81,11 +83,22 @@ int pontotur1, pontotur2;
     printf("Insira quantidade de pontos turísticos da cidade 2: \n");
     scanf("%d",&pontotur2);
 
-//apresentação dos dados inseridos dos Estados 1 e 2
+//cálculo de dendidade populacional
+
+    denspop1 = populacao1 / area1;
+    denspop2 = populacao2 / area2;
+
+//cálculo do PIB Per Capita
+
+    percapita1 = (pib1 / populacao1) * 1000000000; //para conversão de bilhão para real
+    percapita2 = (pib2 / populacao2) * 1000000000; //para conversão de bilhão para real
+
+//apresentação dos dados inseridos dos Estados A e B
 
     printf("\n Informações Cadastradas com Sucesso! Os dados serão exibidos abaixo!\n");
-    printf("\n Carta 1\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %.2f Km²\n PIB: %.2f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado1,codigo1,cidade1,populacao1,area1,pib1,pontotur1);
-    printf("\n Carta 2\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %.2f Km²\n PIB: %.2f Bilhões de reais\n Número de Pontos Turísticos: %d\n",estado2,codigo2,cidade2,populacao2,area2,pib2,pontotur2);
+    printf("\n Carta 1\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n Densidade Populacional: %.2f hab/Km²\n PIB Per Capita: %.3f reais\n",estado1,codigo1,cidade1,populacao1,area1,pib1,pontotur1,denspop1,percapita1);
+    printf("\n Carta 2\n Estado: %c\n Código: %s\n Nome da Cidade: %s\n População: %d Habitantes\n Área: %f Km²\n PIB: %f Bilhões de reais\n Número de Pontos Turísticos: %d\n Densidade Populacional: %.2f hab/Km²\n PIB Per Capita: %.3f reais\n",estado2,codigo2,cidade2,populacao2,area2,pib2,pontotur2,denspop2,percapita2);
 
-    return 0;
+return 0;
+
 }
